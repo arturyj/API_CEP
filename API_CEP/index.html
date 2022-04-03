@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CEP Brasil</title>
+</head>
+<body>
+    <p id="aviso">Esse site foi feito em HTML, JS e CSS como um exercicio prático, com o único  intuito acadêmico, para um melhor aprendizado ao aluno envolvido.</p>
+    <div id="alto">
+        <div id="desc">
+            <h1 id="titulo">ViaCEP</h1>
+            <h4 id="titulo2">Consulte CEPs de todo o Brasil</h4>
+            <a href="https://viacep.com.br/exemplo/javascript/">API ultilizada: https://viacep.com.br/</a>
+
+        </div>
+    </div>
+
+<div id="baixo">
+    <div id="formCEP"> 
+        <form method="GET" action="/CEP/script.js">
+            <label> CEP
+                <input id="cep" value="" type="text" onblur="verificaCPF()"></input>
+            </label>
+
+            <label>Rua:
+                <input id="rua"></input>
+            </label>
+
+            <label>Bairro:
+                <input id="bairro"></input>
+            </label>
+
+            <label>Cidade:
+                <input id="cidade"></input>
+            </label>
+
+            <label>Estado:
+                <input id="estado"></input>
+            </label>
+        </form>
+    </div>
+</div>
+     
+
+    <script src="script.js"></script>
+</body>
+</html>
